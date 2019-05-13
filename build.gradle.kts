@@ -32,5 +32,5 @@ tasks.test {
 
 application {
     // Define the main class for the application.
-    mainClassName = "sample.AppKt"
+    mainClassName = "template.AppKt"
 }
