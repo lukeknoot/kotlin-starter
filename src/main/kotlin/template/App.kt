@@ -1,5 +1,9 @@
 package template
 
+import mu.KotlinLogging
+
+private val logger = KotlinLogging.logger {}
+
 fun main() {
-    println("Hello Template!")
+    logger.info("Hello Template!")
 }

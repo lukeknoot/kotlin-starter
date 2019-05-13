@@ -12,6 +12,11 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("io.github.microutils:kotlin-logging:1.6.24")
+    implementation("org.slf4j:slf4j-api:1.7.25")
+    implementation("ch.qos.logback:logback-classic:1.2.3")
+    implementation("ch.qos.logback:logback-core:1.2.3")
+
     testImplementation("org.junit.jupiter:junit-jupiter:5.4.2")
 }
 
@@ -25,6 +30,8 @@ tasks.test {
             events(*enumValues<TestLogEvent>())
             setExceptionFormat(TestExceptionFormat.FULL)
         }
+
+        testLogging.showStandardStreams = true
 
         info.events(TestLogEvent.SKIPPED, TestLogEvent.FAILED)
     }
