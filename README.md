@@ -1,9 +1,14 @@
 # kotlin-starter
 
+Motivated by the pain of setting up new Kotlin Gradle projects.
+
 A template for basic Kotlin apps which includes
 - Reasonable base config
 - Test deps
 - Test logging
 - App logging
+- Linter
+- Formatter
 
-Motivated by the pain of setting up a new Kotlin Gradle project each time.
+If using IntelliJ, run `gradle ktlintApplyToIdea` to apply styling rules for auto-formatting.
+

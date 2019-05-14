@@ -10,5 +10,6 @@ class AppTest {
         logger.info("Running test")
         assertEquals(1, 1)
     }
-    companion object: KLogging()
+
+    companion object : KLogging()
 }

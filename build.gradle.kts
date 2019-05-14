@@ -3,6 +3,7 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent
 
 plugins {
     id("org.jetbrains.kotlin.jvm") version "1.3.31"
+    id("org.jlleitschuh.gradle.ktlint") version "8.0.0"
     application
 }
 
@@ -16,10 +17,10 @@ dependencies {
     implementation("org.slf4j:slf4j-api:1.7.25")
     implementation("ch.qos.logback:logback-classic:1.2.3")
     implementation("ch.qos.logback:logback-core:1.2.3")
+    implementation("com.pinterest:ktlint:0.32.0")
 
     testImplementation("org.junit.jupiter:junit-jupiter:5.4.2")
 }
-
 
 tasks.test {
     useJUnitPlatform()
