@@ -17,7 +17,9 @@ dependencies {
     implementation("org.slf4j:slf4j-api:1.7.25")
     implementation("ch.qos.logback:logback-classic:1.2.3")
     implementation("ch.qos.logback:logback-core:1.2.3")
-    implementation("com.pinterest:ktlint:0.32.0")
+    implementation("com.pinterest:ktlint:0.32.0") {
+        exclude("org.slf4j", "slf4j-nop")
+    }
 
     testImplementation("org.junit.jupiter:junit-jupiter:5.4.2")
 }
